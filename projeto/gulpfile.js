@@ -94,7 +94,7 @@ gulp.task('serve', function(){
 })
 
 function end(cb){
-    console.log("tarefas concluídas")
+    console.log("Tarefas Concluídas :D")
     return cb()
 }
 
