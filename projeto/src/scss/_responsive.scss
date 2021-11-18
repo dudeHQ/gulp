@@ -1,0 +1,28 @@
+@media (max-width: 767px) {
+    .subscribe-form .main-content form input.button {
+      margin-top: 20px;
+    }
+    .featured-page #filters {
+      margin-top: 15px;
+      text-align: left;
+    }
+  }
+  ::-webkit-input-placeholder {
+    color: $cor3 !important;
+    opacity: 1;
+  }
+  #email {
+    position: relative;
+  }
+  
+  .invalid {
+    border-color: #f00;
+  }
+  
+  .text-muted {
+    display: none;
+  }
+  
+  .fotoproduto {
+    margin-bottom: 10px;
+  }  
