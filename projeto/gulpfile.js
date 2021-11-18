@@ -1,4 +1,4 @@
-const { series, parallel} = require('gulp')
+const { series, parallel } = require('gulp')
 const gulp = require('gulp')
 const concat = require('gulp-concat')
 const cssmin = require('gulp-cssmin')
@@ -10,7 +10,7 @@ const stripCss = require('gulp-strip-css-comments')
 const htmlmin = require('gulp-htmlmin')
 const babel = require('gulp-babel')
 const browserSync = require('browser-sync').create()
-const sass = require('gulp-sass')( require('node-sass'))
+const sass = require('gulp-sass')(require('node-sass'))
 const { pipe } = require('stdout-stream')
 const { contains } = require('jquery')
 const reload = browserSync.reload
@@ -18,14 +18,14 @@ const reload = browserSync.reload
 function tarefasCSS(cb) {
 
     gulp.src([
-            './node_modules/bootstrap/dist/css/bootstrap.css',
-            './vendor/owl/css/owl.css',
-            './vendor/jquery-ui/jquery-ui.css'
-        ])
+        './node_modules/bootstrap/dist/css/bootstrap.css',
+        './vendor/owl/css/owl.css',
+        './vendor/jquery-ui/jquery-ui.css'
+    ])
         .pipe(stripCss())                   // remove comentários css   
         .pipe(concat('libs.css'))           // mescla arquivos
         .pipe(cssmin())                     // minifica css
-        .pipe(rename({ suffix: '.min'}))    // libs.min.css
+        .pipe(rename({ suffix: '.min' }))    // libs.min.css
         .pipe(gulp.dest('./dist/css'))      // cria arquivo em novo diretório
 
     cb()
@@ -33,38 +33,38 @@ function tarefasCSS(cb) {
 }
 
 function tarefasSASS(cb) {
-    
+
     gulp.src('./src/scss/**/*.scss')
         .pipe(sass()) // transforma o sass para css
-        .pipe(gulp.dest('./dist/css')) 
+        .pipe(gulp.dest('./dist/css'))
 
     cb()
 }
 
-function tarefasJS(callback){
+function tarefasJS(callback) {
 
     gulp.src([
-            './node_modules/jquery/dist/jquery.js',
-            './node_modules/bootstrap/dist/js/bootstrap.js',
-            './vendor/owl/js/owl.js',
-            './vendor/jquery-mask/jquery.mask.js',
-            // './vendor/jquery-ui/jquery-ui.js',
-            './src/js/custom.js'
-        ])
+        './node_modules/jquery/dist/jquery.js',
+        './node_modules/bootstrap/dist/js/bootstrap.js',
+        './vendor/owl/js/owl.js',
+        './vendor/jquery-mask/jquery.mask.js',
+        // './vendor/jquery-ui/jquery-ui.js',
+        './src/js/custom.js'
+    ])
         .pipe(babel({
             comments: false,
             presets: ['@babel/env']
         }))
         .pipe(concat('scripts.js'))         // mescla arquivos
         .pipe(uglify())                     // minifica js
-        .pipe(rename({ suffix: '.min'}))    // scripts.min.js
+        .pipe(rename({ suffix: '.min' }))    // scripts.min.js
         .pipe(gulp.dest('./dist/js'))       // cria arquivo em novo diretório
 
     return callback()
 }
 
-function tarefasImagem(){
-    
+function tarefasImagem() {
+
     return gulp.src('./src/images/*')
         .pipe(image({
             pngquant: true,
@@ -81,7 +81,7 @@ function tarefasImagem(){
 }
 
 // POC - Proof of Concept
-function tarefasHTML(callback){
+function tarefasHTML(callback) {
 
     gulp.src('./src/**/*.html')
         .pipe(htmlmin({ collapseWhitespace: true }))
@@ -91,7 +91,7 @@ function tarefasHTML(callback){
 
 }
 
-gulp.task('serve', function(){
+gulp.task('serve', function () {
 
     browserSync.init({
         server: {
@@ -103,13 +103,13 @@ gulp.task('serve', function(){
 
 })
 
-function end(cb){
+function end(cb) {
     console.log("tarefas concluídas")
     return cb()
 }
 
 // series x parallel
-const process = parallel( tarefasHTML, tarefasJS, tarefasCSS, tarefasSASS, end)
+const process = parallel(tarefasHTML, tarefasJS, tarefasCSS, tarefasSASS, end)
 
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
