@@ -1,28 +1,82 @@
-@media (max-width: 767px) {
-    .subscribe-form .main-content form input.button {
-      margin-top: 20px;
-    }
-    .featured-page #filters {
-      margin-top: 15px;
-      text-align: left;
-    }
+@media (max-width: 991px) {
+  .banner {
+    border-top: none;
+    margin-top: 0;
   }
-  ::-webkit-input-placeholder {
-    color: $cor3 !important;
-    opacity: 1;
+  .navbar .navbar-brand {
+    width: auto;
   }
-  #email {
-    position: relative;
-  }
-  
-  .invalid {
-    border-color: #f00;
-  }
-  
-  .text-muted {
+  .navbar:after {
     display: none;
   }
-  
-  .fotoproduto {
-    margin-bottom: 10px;
-  }  
+  #navbarResponsive {
+    z-index: 99999;
+    position: absolute;
+    top: 96px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(250, 250, 250, 0.95);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  }
+  .navbar-dark .navbar-nav .nav-item {
+    border-bottom: 1px solid #eee;
+  }
+  .navbar-dark .navbar-nav .nav-item:last-child {
+    border-bottom: none;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    padding: 15px 0;
+  }
+  .featured-page #filters {
+    text-align: right;
+  }
+  .single-product .right-content {
+    margin-top: 30px;
+  }
+  .about-page .right-content {
+    margin-top: 30px;
+  }
+  .contact-page .right-content {
+    margin-top: 30px;
+  }
+  .contact-page .right-content .col-md-12,
+  .contact-page .right-content .col-md-6 {
+    padding: 0;
+  }
+  .featured-page {
+    margin-top: 80px;
+  }
+  .about-page,
+  .contact-page {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .subscribe-form .main-content form input.button {
+    margin-top: 20px;
+  }
+  .featured-page #filters {
+    margin-top: 15px;
+    text-align: left;
+  }
+}
+::-webkit-input-placeholder {
+  color: $cor3 !important;
+  opacity: 1;
+}
+#email {
+  position: relative;
+}
+
+.invalid {
+  border-color: #f00;
+}
+
+.text-muted {
+  display: none;
+}
+
+.fotoproduto {
+  margin-bottom: 10px;
+}

@@ -1,113 +1,113 @@
-  .section-heading {
-    margin-top: 80px;
-    margin-bottom: 40px;    
-  }
-  
-  .section-heading .line-dec {
-    width: 30px;
-    height: 5px;
-    background-color: $cor1;
-  }
-  .section-heading h1 {
+.section-heading {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.section-heading .line-dec {
+  width: 30px;
+  height: 5px;
+  background-color: $cor1;
+  h1 {
     font-size: 22px;
     font-weight: 700;
-    color: #1e1e1e;
+    color: $cor4;
     margin-top: 15px;
   }
-  #pre-header {
-    background-color: $cor1;
-    text-align: center;
-  }
-  #pre-header span {
-    color: #fff;
+}
+#pre-header {
+  background-color: $cor1;
+  text-align: center;
+  span {
+    color: $cor3;
     font-size: 15px;
     padding: 10px 0;
     display: inline-block;
   }
-  .navbar .navbar-brand {
-    text-align: center;
-    width: 100%;
-    position: relative;
-    padding: 25px 0;
-  }
-  .bg-dark {
-    background-color: #fff !important;
-  }
-  #navbarResponsive {
-    z-index: 999;
-    position: absolute;
-    left: 50%;
-    top: 128px;
-    transform: translateX(-50%);
-  }
-  .navbar-dark .navbar-nav .nav-item {
-    margin: 0 15px;
-  }
-  .navbar-dark .navbar-nav .nav-link {
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 700;
-    color: #1e1e1e;
-    transition: all 0.5s;
-  }
-  .navbar-dark .navbar-nav .active > .nav-link,
-  .navbar-dark .navbar-nav .nav-link.active,
-  .navbar-dark .navbar-nav .nav-link.show,
-  .navbar-dark .navbar-nav .nav-link:hover,
-  .navbar-dark .navbar-nav .show > .nav-link {
-    color: $cor1;
-  }
-  .navbar:after {
-    width: 100%;
-    height: 1px;
-    background-color: #eee;
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -52px;
-  }
-  .navbar-dark .navbar-toggler-icon {
-    background-image: none;
-  }
-  .navbar-dark .navbar-toggler {
-    border-color: $cor1;
-    background-color: $cor1;
-    height: 50px;
-    outline: 0;
-  }
-  .navbar-dark .navbar-toggler-icon:after {
-    content: "\f0c9";
-    color: #fff;
-    font-size: 22px;
-    line-height: 30px;
-    font-family: FontAwesome;
-  }
-  .banner {
-    margin-top: 50px;
-    background-image: url(../images/banner-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 150px 0;
-    background-position: center center;
-  }
-  .banner .caption {
-    background-color: rgba(250, 250, 250, 0.9);
-    padding: 30px;
-    max-width: 450px;
-  }
-  .banner .caption h2 {
+}
+.navbar .navbar-brand {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  padding: 25px 0;
+}
+.bg-dark {
+  background-color: $cor3 !important;
+}
+#navbarResponsive {
+  z-index: 999;
+  position: absolute;
+  left: 50%;
+  top: 128px;
+  transform: translateX(-50%);
+}
+.navbar-dark .navbar-nav .nav-item {
+  margin: 0 15px;
+}
+.navbar-dark .navbar-nav .nav-link {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  color: $cor4;
+  transition: all 0.5s;
+}
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .show > .nav-link {
+  color: $cor1;
+}
+.navbar:after {
+  width: 100%;
+  height: 1px;
+  background-color: #eee;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -52px;
+}
+.navbar-dark .navbar-toggler-icon {
+  background-image: none;
+}
+.navbar-dark .navbar-toggler {
+  border-color: $cor1;
+  background-color: $cor1;
+  height: 50px;
+  outline: 0;
+}
+.navbar-dark .navbar-toggler-icon:after {
+  content: "\f0c9";
+  color: $cor3;
+  font-size: 22px;
+  line-height: 30px;
+  font-family: FontAwesome;
+}
+.banner {
+  margin-top: 50px;
+  background-image: url(../images/banner-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 150px 0;
+  background-position: center center;
+}
+.banner .caption {
+  background-color: rgba(250, 250, 250, 0.9);
+  padding: 30px;
+  max-width: 450px;
+  h2 {
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 24px;
     font-weight: 700;
-    color: #1e1e1e;
+    color: $cor4;
   }
-  .banner .caption .line-dec {
-    width: 30px;
-    height: 5px;
-    background-color: $cor1;
-  }
-  .banner .caption p {
+  p {
     margin-top: 15px;
     margin-bottom: 20px;
   }
+}
+.banner .caption .line-dec {
+  width: 30px;
+  height: 5px;
+  background-color: $cor1;
+}

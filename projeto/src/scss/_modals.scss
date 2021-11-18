@@ -1,163 +1,122 @@
 .about-page {
-    margin-top: 50px;
-    margin-bottom: 80px;
-  }
-  .about-page .right-content h4 {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+.about-page .left-image img {
+  max-width: 100%;
+}
+.about-page .right-content {
+  h4 {
     font-size: 17px;
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 20px;
   }
-  .about-page .left-image img {
-    max-width: 100%;
-  }
-  .about-page .right-content span {
-    display: inline-block;
-    margin-left: 8px;
-  }
-  .about-page .right-content span a i {
-    transition: all 0.5s;
-    background-color: #aaa;
-    width: 26px;
-    height: 26px;
-    display: inline-block;
-    text-align: center;
-    line-height: 26px;
-    border-radius: 50%;
-    color: $cor3;
-    font-size: 12px;
-    margin-right: 5px;
-  }
-  .about-page .right-content .share {
-    margin-top: 20px;
-    border-top: 1px solid #eee;
-    padding: 15px 0;
-  }
-  .about-page .right-content h6 {
+  h6 {
     font-size: 14px;
-    color: #4a4a4a;
+    color: $cor2;
     font-weight: 400;
   }
-  .about-page .right-content span a:hover i {
-    background-color: $cor1;
+  span {
+    display: inline-block;
+    margin-left: 8px;
+    a {
+      i {
+        transition: all 0.5s;
+        background-color: #aaa;
+        width: 26px;
+        height: 26px;
+        display: inline-block;
+        text-align: center;
+        line-height: 26px;
+        border-radius: 50%;
+        color: $cor3;
+        font-size: 12px;
+        margin-right: 5px;
+      }
+      &:hover i {
+        background-color: $cor1;
+      }
+    }
   }
-  .contact-page {
-    margin-top: 50px;
-    margin-bottom: 80px;
-  }
-  .contact-page .right-content input,
-  .contact-page .right-content textarea {
-    border-radius: 0px;
-    outline: 0;
-    box-shadow: none;
-    font-size: 14px;
-    margin-bottom: 30px;
-  }
-  .contact-page .right-content input {
+}
+
+.about-page .right-content .share {
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  padding: 15px 0;
+}
+.contact-page {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+.contact-page .right-content input,
+.contact-page .right-content textarea {
+  border-radius: 0px;
+  outline: 0;
+  box-shadow: none;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.contact-page .right-content {
+  input {
     height: 44px;
     line-height: 44px;
   }
-  .contact-page .right-content textarea {
+  textarea {
     height: 200px;
     max-height: 280px;
   }
-  .contact-page .right-content span {
+}
+.contact-page .right-content {
+  span {
     display: inline-block;
     margin-left: 8px;
+    a {
+      i {
+        transition: all 0.5s;
+        background-color: #aaa;
+        width: 26px;
+        height: 26px;
+        display: inline-block;
+        text-align: center;
+        line-height: 26px;
+        border-radius: 50%;
+        color: $cor3;
+        font-size: 12px;
+        margin-right: 5px;
+      }
+      &:hover i {
+        background-color: $cor1;
+      }
+    }
   }
-  .contact-page .right-content span a i {
-    transition: all 0.5s;
-    background-color: #aaa;
-    width: 26px;
-    height: 26px;
-    display: inline-block;
-    text-align: center;
-    line-height: 26px;
-    border-radius: 50%;
-    color: $cor3;
-    font-size: 12px;
-    margin-right: 5px;
-  }
-  .contact-page .right-content .share {
-    margin-top: 30px;
-    border-top: 1px solid #eee;
-    padding: 15px 0;
-  }
-  .contact-page .right-content h6 {
+  h6 {
     font-size: 14px;
-    color: #4a4a4a;
+    color: $cor2;
     font-weight: 400;
   }
-  .contact-page .right-content span a:hover i {
-    background-color: $cor1;
-  }
-  .contact-page .right-content .button {
-    cursor: pointer;
-    background-color: $cor1;
-    outline: 0;
-    border-radius: 5px;
-    padding: 10px 15px;
-    display: inline-block;
-    color: $cor3;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 300;
-    letter-spacing: 0.4px;
-    text-decoration: none;
-    transition: all 0.5s;
-    box-shadow: none;
-    border: none;
-  }
-  @media (max-width: 991px) {
-    .banner {
-      border-top: none;
-      margin-top: 0;
-    }
-    .navbar .navbar-brand {
-      width: auto;
-    }
-    .navbar:after {
-      display: none;
-    }
-    #navbarResponsive {
-      z-index: 99999;
-      position: absolute;
-      top: 96px;
-      width: 100%;
-      text-align: center;
-      background-color: rgba(250, 250, 250, 0.95);
-      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    }
-    .navbar-dark .navbar-nav .nav-item {
-      border-bottom: 1px solid #eee;
-    }
-    .navbar-dark .navbar-nav .nav-item:last-child {
-      border-bottom: none;
-    }
-    .navbar-dark .navbar-nav .nav-link {
-      padding: 15px 0;
-    }
-    .featured-page #filters {
-      text-align: right;
-    }
-    .single-product .right-content {
-      margin-top: 30px;
-    }
-    .about-page .right-content {
-      margin-top: 30px;
-    }
-    .contact-page .right-content {
-      margin-top: 30px;
-    }
-    .contact-page .right-content .col-md-12,
-    .contact-page .right-content .col-md-6 {
-      padding: 0;
-    }
-    .featured-page {
-      margin-top: 80px;
-    }
-    .about-page,
-    .contact-page {
-      margin-top: 0;
-    }
-  }
+}
+.contact-page .right-content .share {
+  margin-top: 30px;
+  border-top: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.contact-page .right-content .button {
+  cursor: pointer;
+  background-color: $cor1;
+  outline: 0;
+  border-radius: 5px;
+  padding: 10px 15px;
+  display: inline-block;
+  color: $cor3;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  transition: all 0.5s;
+  box-shadow: none;
+  border: none;
+}
