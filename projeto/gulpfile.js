@@ -19,7 +19,6 @@ function tarefasCSS(cb) {
 
     gulp.src([
             './node_modules/bootstrap/dist/css/bootstrap.css',
-            './node_modules/@fortawesome/fontawesome-free/css/fontawesome.css',
             './vendor/owl/css/owl.css',
             './vendor/jquery-ui/jquery-ui.css'
         ])
