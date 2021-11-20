@@ -77,8 +77,9 @@ $(document).ready(function () {
     if ($("#email").val() != "") {
       $("#email").animate(
         {
-          opacity: "hide",
-          top: "-50",
+          opacity: 0.9,
+          
+
         },
         500,
         function () {
@@ -91,9 +92,6 @@ $(document).ready(function () {
   /*
    *  Ouvinte de eventos .nav-modal-open
    */
-
-
-
 
   $(".nav-modal-open").on("click", function (e) {
     e.preventDefault();
@@ -193,11 +191,4 @@ $(document).ready(function () {
     validate($(this))
     $(this).mask('000.000.000-00');
   })
-
-
-
-
-
-
-
 })
