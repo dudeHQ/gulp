@@ -77,8 +77,9 @@ $(document).ready(function () {
     if ($("#email").val() != "") {
       $("#email").animate(
         {
-          opacity: 'hide',
-          top: "-50",
+          opacity: 0.9,
+          
+
         },
         500,
         function () {
